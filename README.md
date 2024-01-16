@@ -32,7 +32,7 @@ main.login()
 Navigate to Partner Orgs page and check if the given groups exists in the partner org, else it will create the group
 
 #### Inputs:
-1. groupsToCreate = [ [<groupName~string>, <groupVarName~string>, <addAllUsersToGroup~boolean> ] ] 
+1. groupsToCreate = [ [<groupName | string>, <groupVarName | string>, <addAllUsersToGroup | boolean> ] ] 
 2. exceptionListOfCompanies = []
 3. noOfPagesToSkip = -1
 
