@@ -1,0 +1,3 @@
+selenium
+setuptools
+chromedriver-autoinstaller
