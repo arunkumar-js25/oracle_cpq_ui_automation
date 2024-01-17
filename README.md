@@ -33,7 +33,7 @@ Navigate to Partner Orgs page and check if the given groups exists in the partne
 
 #### Inputs:
 1. groupsToCreate = [ [<groupName | string>, <groupVarName | string>, <addAllUsersToGroup | boolean> ] ] 
-2. exceptionListOfCompanies = []
+2. exceptionListOfCompanies = [<partnerOrg-VariableName>] 
 3. noOfPagesToSkip = -1
 
 #### Code:
