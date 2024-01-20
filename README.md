@@ -3,7 +3,7 @@ Selenium based automation bot to do routine and time consuming tasks on Oracle C
 
 ## Pre-requisites
 * Chrome Browser should be installed
-* Supports Python >= 3.8
+* Supports Python >= 3.9
 * CPQ account should have admin access with proxy login option
 
 ### Installation
@@ -43,6 +43,26 @@ main.createGroupsinPartnerOrg(
     [], #exceptionListOfCompanies = [] #Array of strings
     -1 #noOfPagesToSkip = -1
 )
+```
+### 2) Extract and Save BML Libraries as Text files.
+Navigates to Util library page and save all the util libraries as text file 
+
+#### Inputs:
+1. skipLibraries = 0 #Skip no.of.libraries to save
+
+#### Code:
+```
+main.extractBmlLibrary(skipLibraries=0)
+```
+
+#### Output:
+The output folder will be created and files will be saved locally in the below path
+```
+D:\
+   > <cpqInstanceName
+      > BML Library
+          > library1.txt
+            library2.txt
 ```
 
 ### Bot Features
