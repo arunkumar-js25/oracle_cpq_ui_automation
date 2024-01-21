@@ -6,6 +6,7 @@ Selenium based automation bot to do routine and time consuming tasks on Oracle C
 * Supports Python >= 3.9
 * CPQ account should have admin access with proxy login option
 
+
 ### Installation
 ```
 pip install py-oracle-cpq-ui-automation
