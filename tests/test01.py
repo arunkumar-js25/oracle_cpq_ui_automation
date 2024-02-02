@@ -1,5 +1,4 @@
 #from oracle_cpq_ui_automation import oracle_cpq_ui_automation
-
 import oracle_cpq_ui_automation
 
 main = oracle_cpq_ui_automation("<cpqInstanceName>","<userName>","<password>")

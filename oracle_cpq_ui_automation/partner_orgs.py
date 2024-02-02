@@ -38,9 +38,11 @@ def createGroup(driver, companyName, groupName, groupVarName, addAllUsers = Fals
         driver.find_element(By.ID,"variable-name|input").send_keys(groupVarName)
         time.sleep(3)
         if(addAllUsers): #Click >> arrow button to add all users to the group
-            driver.find_element(By.ID,"all-users-right-btn_oj2|text").click()  # select all users
+            # Bug:1 ID changes on 02-20-2024 Removed _oj2|text
+            driver.find_element(By.ID,"all-users-right-btn").click()  # select all users
             time.sleep(3)
-        driver.find_element(By.ID,"save-btn_oj0|text").click()
+        # Bug:2 ID changes on 02-02-2024 Removed _oj0|text
+        driver.find_element(By.ID,"save-btn").click()
         time.sleep(5)
         print("Group "+groupName+" added for " + companyName)
     else:
@@ -48,7 +50,7 @@ def createGroup(driver, companyName, groupName, groupVarName, addAllUsers = Fals
 
 # MAIN: Create Groups in all the partners
 def createPartnersGroups(driver, cpqInstanceName, groupsToCreate=[], exceptionListOfCompanies=[], noOfPagesToSkip=-1):
-	#Basic URL variables
+	# Basic URL variables
 	url = "https://" + cpqInstanceName + ".bigmachines.com"
 	proxylogout = url + "/logout.jsp?proxy_logout=true&amp;_bm_trail_refresh_=true"
 
