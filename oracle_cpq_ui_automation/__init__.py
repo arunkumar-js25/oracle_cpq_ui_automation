@@ -18,7 +18,7 @@ import time
 
 ''' Custom Modules '''
 from oracle_cpq_ui_automation.partner_orgs import createPartnersGroups
-from bmllib import BmlLibrary
+from oracle_cpq_ui_automation.bmllib import BmlLibrary
 
 class oracle_cpq_ui_automation:
     def __init__(self,cpqInstanceName, username, password):

@@ -21,8 +21,7 @@ import oracle_cpq_ui_automation
 #Initialise the automation class with SiteName, username, password
 main = oracle_cpq_ui_automation("<cpqInstanceName>","<userName>","<password>") 
 
-#Launch the Chromedriver 
-main.launchChrome()
+#It will autolaunch the Chromedriver browser
 
 #Login into the CPQ Site
 main.login()
